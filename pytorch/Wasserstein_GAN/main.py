@@ -73,7 +73,7 @@ if __name__=="__main__":
                                     transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),
                                 ]))
     elif opt.dataset == 'lsun':
-        dataset = dset.LSUN(db_path=opt.dataroot, classes=['bedroom_train'],
+        dataset = dset.LSUN(root=opt.dataroot, classes=['bedroom_train'],
                             transform=transforms.Compose([
                                 transforms.Scale(opt.imageSize),
                                 transforms.CenterCrop(opt.imageSize),
