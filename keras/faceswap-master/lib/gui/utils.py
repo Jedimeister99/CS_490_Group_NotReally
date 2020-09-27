@@ -443,7 +443,7 @@ class Images():
         self._previewtrain = dict()
         self._previewcache = dict(modified=None,  # cache for extract and convert
                                   images=None,
-                                  filenames=list("/home/szmurlh/CK-Images/S035","/home/szmurlh/CK-Images/S061"),
+                                  filenames=list(),
                                   placeholder=None)
 
     @staticmethod
