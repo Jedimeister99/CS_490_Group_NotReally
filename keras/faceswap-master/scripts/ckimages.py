@@ -24,12 +24,12 @@ def main ():
 
     for subject in (os.listdir(sourceDir)):
         #sequence level?
-        print(subject)
+        #print(subject)
         for sequence in (os.listdir(os.path.join(sourceDir, subject))):
-            print(sequence)
+            #print(sequence)
+            for filename in sequence:
+                print(sequence)
 
-            # do something with glob?
-            #glob.glob('*.png')
 
 
 if __name__ == "__main__":
