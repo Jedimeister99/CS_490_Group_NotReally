@@ -441,9 +441,7 @@ class Images():
         self._pathoutput = None
         self._previewoutput = None
         self._previewtrain = dict()
-        self._previewcache = dict(modified=None,  # cache for extract and convert
-                                  images=None,
-                                  filenames=list(),
+        self._previewcache = dict(modified=None,  # cache for extract and converts
                                   placeholder=None)
 
     @staticmethod
