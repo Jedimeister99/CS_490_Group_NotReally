@@ -28,9 +28,7 @@ def main ():
         for sequence in (os.listdir(os.path.join(sourceDir, subject))):
             #print(sequence)
             for file in (os.listdir(os.path.join(sourceDir,subject,sequence))):
-                if file.endswith(".png"):
-                    imagePaths.append(os.path.join(sourceDir,subject,sequence,file))
-                    print(file)
+                print(sys.path)
 
 
 
