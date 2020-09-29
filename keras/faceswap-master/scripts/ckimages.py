@@ -24,13 +24,14 @@ def main ():
 
     for subject in (os.listdir(sourceDir)):
         #sequence level?
-        print(subject)
+        #print(subject)
         for sequence in (os.listdir(os.path.join(sourceDir, subject))):
-
             print(sequence)
-
-
-
+            for f in (os.listdir(os.path.join(sourceDir,subject,sequence))):
+                print("please finally work")
+                #check for png
+                #append to list
+            
 
 
 
