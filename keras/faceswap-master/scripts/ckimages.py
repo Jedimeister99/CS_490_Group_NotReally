@@ -19,19 +19,18 @@ import glob
 #cohn-kanade-images level?
 
 def main ():
+
     imagePaths = []
-    sourceDir = "/media/Data/CK+/CK+/cohn-kanade-images"
+    sourceDir = sourceDir = "/media/Data/CK+/CK+/cohn-kanade-images"
 
-    for subject in (glob.glob(sourceDir + "/*")):
+    for subject in (glob.glob(sourceDir + "/*/")):
 
-        for sequence in (glob.glob(subject + "/*")):
+        print(subject)
+        for sequence in (glob.glob(subject + "*/")):
+            # print(os.path.join(sourceDir, subject))
+            print("\t" + sequence)
             for png in glob.glob(sequence + "*.png"):
-                print("hello")
-
-                #append to list
-            
-
-
+                print("\t\t" + png)
 
 
 if __name__ == "__main__":
