@@ -23,7 +23,7 @@ import numpy as np
 def main ():
 
     imagePaths = []
-    sourceDir = sourceDir = "/media/Data/CK+/CK+/cohn-kanade-images"
+    sourceDir = "/media/Data/CK+/CK+/cohn-kanade-images"
 
     for subject in (glob.glob(sourceDir + "/*/")):
 
