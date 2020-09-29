@@ -26,8 +26,8 @@ def main ():
         #sequence level?
         print(subject)
         for sequence in (os.listdir(os.path.join(sourceDir, subject))):
-            for file in (os.listdir(os.path.join(sourceDir,subject,sequence))):
-                print("for the love of all that is good and holy")
+
+            print(sequence)
 
 
 
