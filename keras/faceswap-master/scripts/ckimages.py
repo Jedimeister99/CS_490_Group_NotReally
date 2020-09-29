@@ -32,7 +32,7 @@ def main ():
                 if file.endswith(".png"):
                     imagePaths.append(os.path.join(sourceDir,subject,sequence,file))
                   #  print(file)
-                elif:
+                else:
                     break
 
 
