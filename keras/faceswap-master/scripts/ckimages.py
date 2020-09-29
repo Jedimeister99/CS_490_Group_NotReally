@@ -24,7 +24,7 @@ def main ():
 
     for subject in (os.listdir(sourceDir)):
         #sequence level?
-        #print(subject)
+        print(subject)
         for sequence in (os.listdir(os.path.join(sourceDir, subject))):
 
             print(sequence)
