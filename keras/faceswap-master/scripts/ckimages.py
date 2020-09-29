@@ -12,8 +12,7 @@
 
 import os
 import glob
-import cv2
-import numpy as np
+
 
 
 
@@ -33,10 +32,11 @@ def main ():
             #print("\t" + sequence)
             for png in glob.glob(sequence + "*.png"):
                 #print("\t\t" + png)
-                image = cv2.imread("*.png")
-                imagePaths.append(image)
+                imagePaths.append("*.png")
 
-    print('image paths', np.array(imagePaths).shape)
+    print(imagePaths)
+
+
 
 
 
