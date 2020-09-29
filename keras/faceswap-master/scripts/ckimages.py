@@ -32,9 +32,9 @@ def main ():
             #print("\t" + sequence)
             for png in glob.glob(sequence + "*.png"):
                 #print("\t\t" + png)
-                imagePaths.append("*.png")
+                imagePaths.append(sequence +"*.png")
 
-    print(imagePaths)
+    #print(imagePaths)
 
 
 
