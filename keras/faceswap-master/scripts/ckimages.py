@@ -28,7 +28,7 @@ def main ():
         print(subject)
         for sequence in (glob.glob(subject + "*/")):
             # print(os.path.join(sourceDir, subject))
-            print("\t" + sequence)
+            #print("\t" + sequence)
             for png in glob.glob(sequence + "*.png"):
                 print("\t\t" + png)
 
