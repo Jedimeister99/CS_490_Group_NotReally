@@ -26,8 +26,10 @@ def main ():
         #sequence level?
         #print(subject)
         for sequence in (os.listdir(os.path.join(sourceDir, subject))):
-            if os.path.isdir(sequence):
-                print("correct")
+            for sequence in (os.listdir(os.path.join(sourceDir, subject,sequence))):
+                print("for the love of god work")
+
+
 
 
 
