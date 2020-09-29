@@ -36,7 +36,7 @@ def main ():
                 image = cv2.imread("*.png")
                 imagePaths.append(image)
 
-    print('paths', np.array(imagePaths).shape)
+    print('image paths', np.array(imagePaths).shape)
 
 
 
