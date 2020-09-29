@@ -27,8 +27,8 @@ def main ():
         #print(subject)
         for sequence in (os.listdir(os.path.join(sourceDir, subject))):
             #print(sequence)
-            for file in (os.listdir(os.path.join(sourceDir,subject,sequence))):
-                print(sys.path)
+            if os.path.isdir(sequence):
+                print("directory")
 
 
 
