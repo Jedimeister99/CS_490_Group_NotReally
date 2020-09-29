@@ -26,7 +26,7 @@ def main ():
 
         for sequence in (glob.glob(subject + "/*")):
             for png in glob.glob(sequence + "*.png"):
-
+                print("hello")
 
                 #append to list
             
