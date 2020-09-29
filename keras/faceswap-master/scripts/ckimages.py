@@ -33,7 +33,7 @@ def main ():
             #print("\t" + sequence)
             for png in glob.glob(sequence + "*.png"):
                 #print("\t\t" + png)
-                image = cv2.imread(sequence + "*.png")
+                image = cv2.imread("*.png")
                 imagePaths.append(image)
 
     print('paths', np.array(imagePaths).shape)
