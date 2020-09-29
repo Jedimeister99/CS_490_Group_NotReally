@@ -22,12 +22,11 @@ def main ():
     imagePaths = []
     sourceDir = "/media/Data/CK+/CK+/cohn-kanade-images"
 
-    for subject in (os.listdir(sourceDir)):
-        #sequence level?
-        #print(subject)
-        for sequence in (os.listdir(os.path.join(sourceDir, subject))):
+    for subject in (glob.glob(sourceDir, "/*")):
+
+        for sequence in (glob.glob(subject, "/*")):
             print(sequence)
-            for f in (os.listdir(os.path.join(sourceDir,subject,sequence))):
+            for png in glob.glob(sequence + "*.png"):
                 print("please finally work")
                 #check for png
                 #append to list
