@@ -27,7 +27,7 @@ def main ():
         #print(subject)
         for sequence in (os.listdir(os.path.join(sourceDir, subject))):
             for sequence in (os.listdir(os.path.join(sourceDir, subject,sequence))):
-                print("for the love of God work")
+                print("for the love of God WORK")
 
 
 
