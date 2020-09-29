@@ -34,7 +34,7 @@ def main ():
                 #print("\t\t" + png)
                 imagePaths.append(sequence +"*.png")
 
-    #print(imagePaths)
+    print(imagePaths)
 
 
 
