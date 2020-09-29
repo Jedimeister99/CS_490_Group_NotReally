@@ -12,6 +12,8 @@
 
 import os
 import glob
+import cv2
+import numpy as np
 
 
 
@@ -30,7 +32,12 @@ def main ():
             # print(os.path.join(sourceDir, subject))
             #print("\t" + sequence)
             for png in glob.glob(sequence + "*.png"):
-                print("\t\t" + png)
+                #print("\t\t" + png)
+                image = cv2.imread(sequence + "*.png")
+                imagePaths.append(image)
+
+print('paths', np.array(imagePaths).shape)
+
 
 
 if __name__ == "__main__":
