@@ -177,7 +177,7 @@ def get_image_paths(directory):
     logger = logging.getLogger(__name__)  # pylint:disable=invalid-name
     image_extensions = _image_extensions
     dir_contents = list()
-
+    print("hi")
     if not os.path.exists(directory):
         logger.debug("Creating folder: '%s'", directory)
         directory = get_folder(directory)

@@ -45,7 +45,7 @@ class Extract():  # pylint:disable=too-few-public-methods
         logger.info("Output Directory: %s", self._args.output_dir)
 
 
-        self._images = ImagesLoader(imagePaths, fast_count=True)
+        self._images = ImagesLoader(self._args.input_dir, fast_count=True)
         self._alignments = Alignments(self._args, True, self._images.is_video)
 
         self._existing_count = 0
