@@ -182,7 +182,7 @@ def get_image_paths(directory):
         logger.debug("Creating folder: '%s'", directory)
         directory = get_folder(directory)
 
-    #dir_scanned = sorted(os.scandir(directory), key=lambda x: x.name)
+    dir_scanned = sorted(os.scandir(directory), key=lambda x: x.name)
     scannedFiles = os.scandir(directory)
     for entry in scannedFiles:
         if entry.is_dir() or entry.is_file():
