@@ -177,14 +177,23 @@ def get_image_paths(directory):
     logger = logging.getLogger(__name__)  # pylint:disable=invalid-name
     image_extensions = _image_extensions
     dir_contents = list()
-    print("hi")
+
     if not os.path.exists(directory):
         logger.debug("Creating folder: '%s'", directory)
         directory = get_folder(directory)
 
-    dir_scanned = sorted(os.scandir(directory), key=lambda x: x.name)
+    #dir_scanned = sorted(os.scandir(directory), key=lambda x: x.name)
+    scannedFiles = os.scandir(directory)
+    for entry in scannedFiles:
+        if entry.is_dir() or entry.is_file():
+            print(entry.name)
+
+    logger.debug("What's in here", scannedFiles)
+
     logger.debug("Scanned Folder contains %s files", len(dir_scanned))
     logger.trace("Scanned Folder Contents: %s", dir_scanned)
+
+
 
     for chkfile in dir_scanned:
         if any([chkfile.name.lower().endswith(ext)
