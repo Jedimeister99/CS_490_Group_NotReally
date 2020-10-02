@@ -183,9 +183,14 @@ def get_image_paths(directory):
         directory = get_folder(directory)
 
     dir_scanned = sorted(os.scandir(directory), key=lambda x: x.name)
-    allFiles = os.scandir(directory)
-    for f in allFiles:
+    for f in dir_scanned:
         print(f)
+    #allFiles = os.scandir(directory)
+    #for f in allFiles:
+    #    print(f)
+    # scandir returns file format of 'S005_001_00000007.png'
+
+
 
 
 
