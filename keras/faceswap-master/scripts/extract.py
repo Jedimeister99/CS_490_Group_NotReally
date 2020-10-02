@@ -4,7 +4,7 @@
 import logging
 import os
 import sys
-import ckimages
+
 
 
 from tqdm import tqdm
