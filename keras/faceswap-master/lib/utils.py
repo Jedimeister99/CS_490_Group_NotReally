@@ -184,7 +184,7 @@ def get_image_paths(directory):
 
     dir_scanned = sorted(os.scandir(directory), key=lambda x: x.name)
     allFiles = os.scandir(directory)
-    logger.trace("Scandir contents: %s", allFiles)
+    print("Scandir contents: %s", allFiles)
 
 
 
