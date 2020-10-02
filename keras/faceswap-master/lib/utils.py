@@ -185,7 +185,7 @@ def get_image_paths(directory):
     dir_scanned = sorted(os.scandir(directory), key=lambda x: x.name)
     allFiles = os.scandir(directory)
     for x in range(len(allFiles)):
-        print allfiles[x]
+        print(allfiles[x])
 
 
 
