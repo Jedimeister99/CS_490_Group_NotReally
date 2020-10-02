@@ -183,12 +183,10 @@ def get_image_paths(directory):
         directory = get_folder(directory)
 
     dir_scanned = sorted(os.scandir(directory), key=lambda x: x.name)
-    scannedFiles = os.scandir(directory)
-    for entry in scannedFiles:
-        if entry.is_dir() or entry.is_file():
-           print(entry.name)
+    allFiles = os.scandir(directory)
+    logger.trace("Scandir contents: %s", allFiles)
 
-    #logger.debug("What's in here", scannedFiles)
+
 
     logger.debug("Scanned Folder contains %s files", len(dir_scanned))
     logger.trace("Scanned Folder Contents: %s", dir_scanned)
