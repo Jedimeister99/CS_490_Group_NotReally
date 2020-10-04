@@ -190,7 +190,7 @@ def get_image_paths(directory):
     #for f in allFiles:
     #    print(f)
 
-    allFiles = glob.glob(dir_scanned, recursive = True)
+    allFiles = glob.glob(directory, recursive = True)
     for file in allFiles:
         print(file)
 
