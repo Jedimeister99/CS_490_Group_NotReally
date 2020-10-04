@@ -183,15 +183,15 @@ def get_image_paths(directory):
         logger.debug("Creating folder: '%s'", directory)
         directory = get_folder(directory)
 
-    #dir_scanned = sorted(os.scandir(directory), key=lambda x: x.name)
+    dir_scanned = sorted(os.scandir(directory), key=lambda x: x.name)
     #for f in dir_scanned:
      #   print(f)
     #dir_scanned = os.scandir(directory)
     #for f in allFiles:
     #    print(f)
 
-    dir_scanned = glob.glob(directory, recursive = True)
-    for file in dir_scanned:
+    allFiles = glob.glob(directory, recursive = True)
+    for file in allFiles:
         print(file)
 
 
