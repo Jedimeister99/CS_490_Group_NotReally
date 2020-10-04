@@ -192,6 +192,7 @@ def get_image_paths(directory):
 
     allFiles = glob.glob(directory, recursive = True)
     for file in allFiles:
+        print("look here")
         print(file)
 
 
