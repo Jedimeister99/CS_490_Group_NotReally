@@ -190,6 +190,10 @@ def get_image_paths(directory):
     #for f in allFiles:
     #    print(f)
 
+
+    #only grabs the directory not the files
+    #allFiles = glob.glob(directory, recursive=True)
+
     allFiles = glob.glob('{directory}/**'.format(directory=directory), recursive = True)
     for file in allFiles:
         #print("look here")
