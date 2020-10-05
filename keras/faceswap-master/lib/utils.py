@@ -195,19 +195,15 @@ def get_image_paths(directory):
     #only grabs the directory not the files
     #allFiles = glob.glob(directory, recursive=True)
 
-
+    dir_scanned = sorted(os.scandir(directory), key=lambda x: x.name)
     allFiles = glob.glob('{directory}/**'.format(directory=directory), recursive = True)
-    for file in allFiles:
-        #print("look here")
-        print(file)
+    print(type(dir_scanned))
+    print(type(allFiles))
+    exit (1)
 
-
-
-
-
-
-
-
+    #for file in allFiles:
+    #print("look here")
+    #print(file)
 
 
     #logger.debug("Scanned Folder contains %s files", len(dir_scanned))
