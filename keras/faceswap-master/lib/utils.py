@@ -213,13 +213,15 @@ def get_image_paths(directory):
     #logger.debug("Scanned Folder contains %s files", len(dir_scanned))
     #logger.trace("Scanned Folder Contents: %s", dir_scanned)
 
-for chkfile in allFiles:
+
+
+    for chkfile in allFiles:
         if any([chkfile.name.lower().endswith(ext)
                 for ext in image_extensions]):
             logger.trace("Adding '%s' to image list", chkfile.path)
             allFiles.append(chkfile.path)
 
-    logger.debug("Returning %s images", len(Allfiles))
+    logger.debug("Returning %s images", len(dir_contents)
     return dir_contents
 
 
