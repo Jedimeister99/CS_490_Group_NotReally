@@ -198,7 +198,7 @@ def get_image_paths(directory):
     dir_scanned = sorted(os.scandir(directory), key=lambda x: x.name)
     allFiles = glob.glob('{directory}/**'.format(directory=directory), recursive = True)
     print(type(dir_scanned[0]))
-    print(type(allFiles))
+    print(type(allFiles[0]))
     exit (1)
 
     #for file in allFiles:
