@@ -222,7 +222,7 @@ def get_image_paths(directory):
         if any([chkfile.lower().endswith(ext)
                 for ext in image_extensions]):
             logger.trace("Adding '%s' to image list", chkfile)
-            dir_contents.append(chkfile)
+            dir_contents.append(os.path.normpath(chkfile))
 
     logger.debug("Returning %s images", len(dir_contents))
     return dir_contents
