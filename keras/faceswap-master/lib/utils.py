@@ -183,7 +183,7 @@ def get_image_paths(directory):
         logger.debug("Creating folder: '%s'", directory)
         directory = get_folder(directory)
 
-    dir_scanned = sorted(os.scandir(directory), key=lambda x: x.name)
+    #dir_scanned = sorted(os.scandir(directory), key=lambda x: x.name)
     # scandir returns file format of 'S005_001_00000007.png'
     #for f in dir_scanned:
      #   print(f)
@@ -210,8 +210,8 @@ def get_image_paths(directory):
 
 
 
-    logger.debug("Scanned Folder contains %s files", len(dir_scanned))
-    logger.trace("Scanned Folder Contents: %s", dir_scanned)
+    #logger.debug("Scanned Folder contains %s files", len(dir_scanned))
+    #logger.trace("Scanned Folder Contents: %s", dir_scanned)
 
 
 
