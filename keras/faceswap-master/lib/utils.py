@@ -221,7 +221,7 @@ def get_image_paths(directory):
             logger.trace("Adding '%s' to image list", chkfile.path)
             allFiles.append(chkfile.path)
 
-    logger.debug("Returning %s images", len(dir_contents)
+    logger.debug("Returning %s images", len(dir_contents))
     return dir_contents
 
 
