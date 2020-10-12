@@ -1290,7 +1290,7 @@ class _TrainingAlignments():
                 detected_faces[face["hash"]] = detected_face
         logger.debug("Detected Faces count: %s, Skipped faces count: %s, duplicate faces "
                      "count: %s", len(detected_faces), skip_count, dupe_count)
-        if skip_count != 0:
+        if skip_count != 0:u
             logger.warning("%s alignments have been removed as their corresponding faces do not "
                            "exist in the input folder for side %s. Run in verbose mode if you "
                            "wish to see which alignments have been excluded.",
