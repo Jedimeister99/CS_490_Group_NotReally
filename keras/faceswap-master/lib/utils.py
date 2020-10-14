@@ -210,7 +210,7 @@ def get_image_paths(directory):
     #logger.trace("Scanned Folder Contents: %s", dir_scanned)
 
 
-    '''
+
     for chkfile in dir_scanned:
         if any([chkfile.name.lower().endswith(ext)
                 for ext in image_extensions]):
@@ -227,7 +227,7 @@ def get_image_paths(directory):
             #print chkfile
             print(chkfile)
             dir_contents.append(os.path.normpath(chkfile))
-
+    '''
     logger.debug("Returning %s images", len(dir_contents))
     return dir_contents
 
