@@ -982,7 +982,7 @@ class TrainArgs(FaceSwapArgs):
         argument_list.append(dict(
             opts=("-ss", "--snapshot-interval"),
             action=Slider,
-            min_max=(0, 150000),
+            min_max=(0, 120000),
             rounding=5000,
             type=int,
             dest="snapshot_interval",
