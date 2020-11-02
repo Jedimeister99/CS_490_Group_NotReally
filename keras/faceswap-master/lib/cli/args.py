@@ -986,7 +986,7 @@ class TrainArgs(FaceSwapArgs):
             rounding=5000,
             type=int,
             dest="snapshot_interval",
-            default=100000,
+            default=25000,
             group="Saving",
             help="Sets the number of iterations before saving a backup snapshot of the model "
                  "in it's current state. Set to 0 for off."))
