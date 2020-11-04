@@ -201,7 +201,7 @@ def get_image_paths(directory):
     #print(type(allFiles[0]))
     #exit (1)
 
-    for file in allFiles:
+    for file in dir_scanned:
     print("look here")
     print(file)
 
