@@ -4,8 +4,9 @@
 #call train/convert using tempdir
 #delete images 
 
-#import tempfile
-#tempimages = tempfile.TemporaryDirectory()
-#glob.glob('{directory}/*.png'.format, recursive=True)
+import tempfile
+tempimages = tempfile.TemporaryDirectory()
+for
+
 
 
