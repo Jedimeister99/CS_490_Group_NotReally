@@ -1,4 +1,11 @@
 #!/usr/bin python3
-""" Main entry point to the training process of FaceSwap """
+#create tempdir
+#read images from subject and put in tempdir
+#call train/convert using tempdir
+#delete images 
 
-import os
+#import tempfile
+#tempimages = tempfile.TemporaryDirectory()
+#glob.glob('{directory}/*.png'.format, recursive=True)
+
+
