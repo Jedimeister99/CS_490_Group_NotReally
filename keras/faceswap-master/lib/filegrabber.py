@@ -5,8 +5,7 @@
 #delete images 
 
 #import tempfile
-#tempimages = tempfile.TemporaryDirectory()
-#or
-
+#tempDir = tempfile.TemporaryDirectory()
+#for
 
 
