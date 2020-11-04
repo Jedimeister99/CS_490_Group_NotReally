@@ -196,7 +196,7 @@ def get_image_paths(directory):
     #allFiles = glob.glob(directory, recursive=True)
 
     #dir_scanned = sorted(os.scandir(directory), key=lambda x: x.name)
-    #dir_scanned = glob.glob('directory/*.png', recursive = True)
+    dir_scanned = glob.glob('directory/*.png', recursive = True)
     for f in glob.glob('/home/szmurlh/subjects/S080/*.png'):
         print("Checking...")
     #print(dir_scanned)
