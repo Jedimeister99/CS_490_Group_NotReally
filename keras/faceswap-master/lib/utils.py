@@ -201,8 +201,8 @@ def get_image_paths(directory):
     #print(type(allFiles[0]))
     #exit (1)
 
-   for file in dir_scanned:
-       print(file)
+    for file in dir_scanned:
+        print(file)
 
 
     logger.debug("Scanned Folder contains %s files", len(dir_scanned))
