@@ -193,7 +193,7 @@ def get_image_paths(directory):
 
 
     #only grabs the directory not the files
-    allFiles = glob.glob(directory, recursive=True)
+    #allFiles = glob.glob(directory, recursive=True)
 
     #dir_scanned = sorted(os.scandir(directory), key=lambda x: x.name)
     dir_scanned = glob.glob('{directory}/**'.format(directory=directory), recursive = True)
