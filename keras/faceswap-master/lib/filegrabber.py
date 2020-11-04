@@ -4,9 +4,9 @@
 #call train/convert using tempdir
 #delete images 
 
-import tempfile
-tempimages = tempfile.TemporaryDirectory()
-for
+#import tempfile
+#tempimages = tempfile.TemporaryDirectory()
+#or
 
 
 
