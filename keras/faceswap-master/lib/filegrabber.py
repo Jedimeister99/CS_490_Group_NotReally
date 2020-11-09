@@ -2,10 +2,18 @@
 #create tempdir
 #read images from subject and put in tempdir
 #call train/convert using tempdir
-#delete images 
-
-#import tempfile
-#tempDir = tempfile.TemporaryDirectory()
-#for
+#delete images
 
 
+
+
+
+
+
+
+
+
+
+
+if __name__ == "__main__":
+        main()
