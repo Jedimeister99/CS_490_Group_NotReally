@@ -6,7 +6,7 @@ ckCopyPath = "/home/szmurlh/CK+_Copy"
 def main():
     for directory in os.listdir(ckPath):
         subjectPath = os.path.join(ckPath,directory)
-        os.mkdir(subjectPath)
+
 
 
 
