@@ -1,1 +1,1 @@
-CUDA_VISIBLE_DEVICES=0 python test.py --dataroot /home/hortonbm/github/CS_490_Group_NotReally/pytorch/Life_Age_Transformation_Synthesis/Lifespan_Code/datasets/SelfPictures --name males_model --which_epoch latest --display_id 0 --deploy --image_path_file males_image_list.txt --full_progression --verbose 
+CUDA_VISIBLE_DEVICES=0 python test.py --name males_model --which_epoch latest --display_id 0 --deploy --image_path_file males_image_list.txt --full_progression --verbose 
