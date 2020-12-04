@@ -5,7 +5,7 @@ Contributors: Brandon Horton, Gregory Patti, Hannah Szmurlo, Dr. Michael J. Real
 Overview:
 
 This is the repository for Applications of Data Augmentation for Existing Databases. This is a part of the CS 490/548 course taught by
-Dr. Michael J. Reale at SUNY Polytechnic in Fall 2020.
+Dr. Michael J. Reale at SUNY Polytechnic in Fall 2020. 
 
 Dependencies and Setup:
 
@@ -48,7 +48,7 @@ Primary Files:
 - CKSwap.py: cycles through the CK+ dataset and:
   
   - creates a copy of the dataset, but making the removing the sequence folders from the file structure
-  - indivudally calls the extraction, conversion, and training scripts for every possible combination of subjects
+  - individually calls the extraction, conversion, and training scripts for every possible combination of subjects
 
 How to Run:
 
