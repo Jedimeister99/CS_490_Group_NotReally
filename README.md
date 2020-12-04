@@ -11,6 +11,8 @@ Dependencies and Setup:
 
 DeepFakes/Faceswap:
 
+Link: https://github.com/deepfakes/faceswap
+
 - requires an Anaconda environment to be set up
 - Python 3 
 - Tensorflow
@@ -18,12 +20,16 @@ DeepFakes/Faceswap:
 
 PRNet:
 
+Link: https://github.com/YadiraF/PRNet
+
 - requires an Anaconda environment to be set up
 - Python 2.7 (numpy,skimage,scipy)
 - Tensorflow >= 1.4
 - optional: dlib, opencv
 
 Face3D:
+
+Link: https://github.com/YadiraF/face3d
 
 - requires an Anaconda environment to be set up
 - Python 2 or 3
@@ -39,6 +45,10 @@ Primary Files:
 - extract.py: script that performs the extraction process
 - convert.py: script that performs the conversion process
 - train.py: script that performs the training process
+- CKSwap.py: cycles through the CK+ dataset and:
+  
+  - creates a copy of the dataset, but making the removing the sequence folders from the file structure
+  - indivudally calls the extraction, conversion, and training scripts for every possible combination of subjects
 
 How to Run:
 
