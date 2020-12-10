@@ -35,6 +35,24 @@ Link: https://github.com/YadiraF/face3d
 - Python 2 or 3
 - Python packages: numpy, skimage, scipy, matplotlib, Cython
 
+Lifespan Age Transformation Synthesis: 
+
+Link: https://github.com/royorel/Lifespan_Age_Transformation_Synthesis
+
+- OpenCV 
+- visdom 
+- dominate
+- numpy
+- scipy
+- pillow
+- unicode
+- requests
+- tqdm
+- glob 
+- OS 
+- CV2
+
+
 Running the Project:
 
 Faceswap:
@@ -82,6 +100,14 @@ How to Run:
 - python 3_transform.py
 - python 4_light.py
 
+
+Lifespan Age Transformation Synthesis:
+
+How to Run:
+
+-Have the BP4D database on your local machine. Change the inputDir to fit where you installed the database, leading up to the .*/BP4D/125-wide/COLOR directory
+-Change the inputDirFemale and inputDirMale to fit to .*/Lifespan_Code/results/((female_model or male_mode))/test_latest/traversal/
+-Run the noteboook LATS_Image_RunandSlice. Choose which cell for male/female you want to run after the lists are sorted.
 
 
 
