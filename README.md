@@ -105,9 +105,9 @@ Lifespan Age Transformation Synthesis:
 
 How to Run:
 
--Have the BP4D database on your local machine. Change the inputDir to fit where you installed the database, leading up to the .*/BP4D/125-wide/COLOR directory
--Change the inputDirFemale and inputDirMale to fit to .*/Lifespan_Code/results/((female_model or male_mode))/test_latest/traversal/
--Run the noteboook LATS_Image_RunandSlice. Choose which cell for male/female you want to run after the lists are sorted.
+- Have the BP4D database on your local machine. Change the inputDir to fit where you installed the database, leading up to the .*/BP4D/125-wide/COLOR directory
+- Change the inputDirFemale and inputDirMale to fit to .*/Lifespan_Code/results/((female_model or male_mode))/test_latest/traversal/
+- Run the noteboook LATS_Image_RunandSlice. Choose which cell for male/female you want to run after the lists are sorted.
 
 
 
