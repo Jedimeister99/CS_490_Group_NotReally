@@ -5,6 +5,8 @@ import logging
 import os
 import sys
 
+
+
 from tqdm import tqdm
 
 from lib.image import encode_image_with_hash, generate_thumbnail, ImagesLoader, ImagesSaver
@@ -41,6 +43,8 @@ class Extract():  # pylint:disable=too-few-public-methods
         self._output_dir = str(get_folder(self._args.output_dir))
 
         logger.info("Output Directory: %s", self._args.output_dir)
+
+
         self._images = ImagesLoader(self._args.input_dir, fast_count=True)
         self._alignments = Alignments(self._args, True, self._images.is_video)
 

@@ -8,6 +8,7 @@ import os
 import sys
 import urllib
 import warnings
+import glob
 import zipfile
 
 from pathlib import Path
@@ -182,16 +183,50 @@ def get_image_paths(directory):
         logger.debug("Creating folder: '%s'", directory)
         directory = get_folder(directory)
 
-    dir_scanned = sorted(os.scandir(directory), key=lambda x: x.name)
+    #dir_scanned = sorted(os.scandir(directory), key=lambda x: x.name)
+    # scandir returns file format of 'S005_001_00000007.png'
+    #for f in dir_scanned:
+     #   print(f)
+    #dir_scanned = os.scandir(directory)
+    #for f in allFiles:
+    #    print(f)
+
+
+    #only grabs the directory not the files
+    #allFiles = glob.glob(directory, recursive=True)
+
+    #dir_scanned = sorted(os.scandir(directory), key=lambda x: x.name)
+    dir_scanned = glob.glob('/home/szmurlh/subjects/*/*.png', recursive = True)
+    #print(dir_scanned)
+    #print(type(dir_scanned[0]))
+    #print(type(allFiles[0]))
+    #exit (1)
+
+
+
+
     logger.debug("Scanned Folder contains %s files", len(dir_scanned))
     logger.trace("Scanned Folder Contents: %s", dir_scanned)
+
+
 
     for chkfile in dir_scanned:
         if any([chkfile.name.lower().endswith(ext)
                 for ext in image_extensions]):
             logger.trace("Adding '%s' to image list", chkfile.path)
             dir_contents.append(chkfile.path)
-
+    
+    '''
+    for chkfile in dir_scanned:
+        if any([chkfile.lower().endswith(ext)
+                for ext in image_extensions]):
+            logger.trace("Adding '%s' to image list", chkfile)
+            #To-do
+            #look for verbose or full logger option
+            #print chkfile
+            print(chkfile)
+            dir_contents.append(os.path.normpath(chkfile))
+    '''
     logger.debug("Returning %s images", len(dir_contents))
     return dir_contents
 

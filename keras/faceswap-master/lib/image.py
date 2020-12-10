@@ -317,8 +317,9 @@ def read_image_batch(filenames):
 
     Example
     -------
-    >>> image_filenames = ["/path/to/image_1.png", "/path/to/image_2.png", "/path/to/image_3.png"]
-    >>> images = read_image_batch(image_filenames)
+
+    image_filenames = ["/path/to/image_1.png", "/path/to/image_2.png", "/path/to/image_3.png"]
+    images = read_image_batch(image_filenames)
     """
     logger.trace("Requested batch: '%s'", filenames)
     executor = futures.ThreadPoolExecutor()
@@ -742,6 +743,8 @@ class ImagesLoader(ImageIO):
                  fast_count=True,
                  skip_list=None,
                  count=None):
+
+
         logger.debug("Initializing %s: (path: %s, queue_size: %s, fast_count: %s, skip_list: %s, "
                      "count: %s)", self.__class__.__name__, path, queue_size, fast_count,
                      skip_list, count)
